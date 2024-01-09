@@ -2,7 +2,7 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 	"use strict";
 
 	return BaseController.extend("com.genrep.book.controller.Main", {
-		sayHello: function () {
+		onSayHelloButtonPress: function () {
 			MessageBox.show("Hello World!");
 		}
 	});
