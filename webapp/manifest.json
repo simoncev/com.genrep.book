@@ -52,7 +52,7 @@
 					"bundleName": "com.genrep.book.i18n.i18n"
 				}
 			},
-			"": {
+			"bookList": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/books.json"
 			}

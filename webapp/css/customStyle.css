@@ -7,3 +7,23 @@
     height: 100%;
     
 }
+
+.transparentTable .sapUiTableCellDummy {
+    background-color: transparent;
+  }
+  
+  .transparentTable .sapUiTableContentRow {
+    background-color: transparent;
+  }
+  
+  .transparentTable .sapUiTableCnt {
+    background-color: transparent;
+  }
+  
+  .transparentTable .sapUiTableHeaderRow {
+    background-color: transparent;
+  }
+  
+  .transparentTable .sapUiTableColHdrCnt {
+    background-color: transparent;
+  }
