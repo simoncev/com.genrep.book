@@ -19,20 +19,20 @@
                 id="idBooksTable"
                 headerText="Прекрасни книги"
                 items = "{bookList>/books}"
-                growingThreshold="10" growingScrollToLoad="false" growing="true"
+                growingThreshold="15" growingScrollToLoad="false" growing="true"
                 
             >
                 <columns>
-                <Column width="10em" >
+                <Column width="10%" >
                     <Text text="{i18n>bookAuthor}"/>
                 </Column>
-                <Column width="8em">
+                <Column width="10%">
                     <Text text="{i18n>bookTag}"/>
                 </Column>
                 <Column width="30em">
                     <Text text="{i18n>bookTitle}"/>
                 </Column>
-                <Column width="30em">
+                <Column width="50%">
                     <Text text="{i18n>bookLink}"/>
                 </Column>
                 </columns>
