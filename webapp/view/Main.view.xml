@@ -12,9 +12,10 @@
         class="customBackground"
         title="{i18n>appTitle}"
         id="page"
+        
     >
         <content>
-            <Table class="transparentTable"
+            <Table 
                 id="idBooksTable"
                 headerText="Прекрасни книги"
                 items = "{bookList>/books}"

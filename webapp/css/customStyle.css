@@ -8,22 +8,11 @@
     
 }
 
-.transparentTable .sapUiTableCellDummy {
-    background-color: transparent;
-  }
-  
-  .transparentTable .sapUiTableContentRow {
-    background-color: transparent;
-  }
-  
-  .transparentTable .sapUiTableCnt {
-    background-color: transparent;
-  }
-  
-  .transparentTable .sapUiTableHeaderRow {
-    background-color: transparent;
-  }
-  
-  .transparentTable .sapUiTableColHdrCnt {
-    background-color: transparent;
-  }
+body { 
+  border-collapse: separate;
+  opacity: 1.0 ;
+}
+table {
+  opacity: 0.8;
+}
+
