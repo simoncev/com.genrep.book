@@ -1,4 +1,4 @@
-[
+{"books": [
     {
       "year": 1894,
       "tag": "novel",
@@ -438,3 +438,4 @@
       "poster_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg/1920px-Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg"
     }
   ]
+}
