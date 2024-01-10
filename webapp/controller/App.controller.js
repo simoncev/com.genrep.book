@@ -8,3 +8,6 @@ sap.ui.define(["./BaseController"], function (BaseController) {
 		}
 	});
 });
+function getSrcUrl() {
+	return "https://upload.wikimedia.org/wikipedia/commons/b/b1/Laser_Towards_Milky_Ways_Centre_Wallpaper.jpg";
+  }

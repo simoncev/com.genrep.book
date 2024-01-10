@@ -53,6 +53,20 @@
 				}
 			}
 		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/customStyle.css"
+				}
+			],
+			"images":[
+				{
+					"uri": "images/books.jpg"
+				}
+			]
+
+		
+		},
 
 		"routing": {
 			"config": {

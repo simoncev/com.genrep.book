@@ -1,0 +1,9 @@
+.customBackground {
+    background-image: url("../images/books.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
