@@ -2,8 +2,8 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 	"use strict";
 
 	return BaseController.extend("com.genrep.book.controller.Main", {
-		onSayHelloButtonPress: function () {
-			MessageBox.show("Hello World!");
+		onPlayVideo: function () {
+			MessageBox.show("Open Page to Play Video");
 		}
 	});
 });

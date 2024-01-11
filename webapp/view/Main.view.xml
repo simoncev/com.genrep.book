@@ -12,37 +12,61 @@
         class="customBackground"
         title="{i18n>appTitle}"
         id="page"
-        
     >
         <content>
-            <Table 
+            <Table
                 id="idBooksTable"
                 headerText="Прекрасни книги"
-                items = "{bookList>/books}"
-                growingThreshold="15" growingScrollToLoad="false" growing="true"
-                
+                items="{bookList>/books}"
+                growingThreshold="15"
+                growingScrollToLoad="false"
+                growing="true"
             >
                 <columns>
-                <Column width="10%" >
-                    <Text text="{i18n>bookAuthor}"/>
-                </Column>
-                <Column width="10%">
-                    <Text text="{i18n>bookTag}"/>
-                </Column>
-                <Column width="30em">
-                    <Text text="{i18n>bookTitle}"/>
-                </Column>
-                <Column width="50%">
-                    <Text text="{i18n>bookLink}"/>
-                </Column>
+                    <Column width="10%">
+                        <Text text="{i18n>bookAuthor}" />
+                    </Column>
+                    <Column width="10%">
+                        <Text text="{i18n>bookTag}" />
+                    </Column>
+                    <Column width="30em">
+                        <Text text="{i18n>bookTitle}" />
+                    </Column>
+                    <Column width="50%">
+                        <Text text="{i18n>bookLink}" />
+                    </Column>
                 </columns>
                 <items>
-                    <ColumnListItem >
+                    <ColumnListItem>
                         <cells>
-                            <Text text="{bookList>author}"></Text>
-                            <Text text="{bookList>tag}"></Text>
-                            <Text text="{bookList>title}"></Text>
-                            <Text text="{bookList>link}"></Text>
+                            <Text text="{bookList>author}" >
+                            <dependents>
+                                    <ResponsivePopover
+                                        id="popover"
+                                        showHeader="false"
+                                    >
+                                        <content>
+                                            <Avatar
+                                                src="https://openui5.org/654aad3012a144881ab07c0bbdd26eb8/phenix_red.svg"
+                                                class="sapUiSmallMargin"
+                                                displaySize="XL"
+                                                imageFitType="Contain"
+                                            />
+                                        </content>
+                                    </ResponsivePopover>
+                                </dependents>
+                            </Text>
+                            <Text text="{bookList>tag}" />
+                            <Text text="{bookList>title}" />
+                            <Button
+                                type="Transparent"
+                                id="idPLayButton"
+                                text="{bookList>link}"
+                                press="onPlayVideo"
+                                icon="sap-icon://media-play"
+                            >
+                                
+                            </Button>
                         </cells>
                     </ColumnListItem>
                 </items>
