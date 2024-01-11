@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="com.genrep.book.controller.Main"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    
+>
+<Page
+        title="Play video"
+        id="idPlayPage"
+    >
+ </Page>   
+</mvc:View>
