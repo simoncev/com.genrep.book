@@ -11,7 +11,7 @@
     <Page
         class="customBackground"
         title="{i18n>appTitle}"
-        id="page"
+        id="idBookPage"
     >
         <content>
             <Table
@@ -39,23 +39,11 @@
                 <items>
                     <ColumnListItem>
                         <cells>
-                            <Text text="{bookList>author}" >
-                            <dependents>
-                                    <ResponsivePopover
-                                        id="popover"
-                                        showHeader="false"
-                                    >
-                                        <content>
-                                            <Avatar
-                                                src="https://openui5.org/654aad3012a144881ab07c0bbdd26eb8/phenix_red.svg"
-                                                class="sapUiSmallMargin"
-                                                displaySize="XL"
-                                                imageFitType="Contain"
-                                            />
-                                        </content>
-                                    </ResponsivePopover>
-                                </dependents>
-                            </Text>
+                            <Text
+                                id="idAuthor"
+                                text="{bookList>author}"
+                            />
+
                             <Text text="{bookList>tag}" />
                             <Text text="{bookList>title}" />
                             <Button
@@ -64,13 +52,12 @@
                                 text="{bookList>link}"
                                 press="onPlayVideo"
                                 icon="sap-icon://media-play"
-                            >
-                                
-                            </Button>
+                            />
                         </cells>
                     </ColumnListItem>
                 </items>
             </Table>
         </content>
+        
     </Page>
 </mvc:View>
