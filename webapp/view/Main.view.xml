@@ -55,7 +55,7 @@
                                 type="Transparent"
                                 id="idPLayButton"
                                 text="{bookList>link}"
-                                press=".onPlayVideo(${bookList>author},${bookList>title},${bookList>link})"
+                                press=".onPlayVideo(${bookList>author},${bookList>title})"
                                 icon="sap-icon://media-play"
                             />
                         </cells>

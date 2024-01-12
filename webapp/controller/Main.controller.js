@@ -24,15 +24,16 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 			this._clearPopover();
 			this.byId("idAuthor").removeEventDelegate(this._myDelegate);
 		},
-		onPlayVideo: function (author, title, link) {
-			let record = { 'author': author, 'title': title, 'link': link }
+		onPlayVideo: function (author, title) {
+			let record = { 'author': author, 'title': title }
 
 			var r = sap.ui.core.UIComponent.getRouterFor(this)
-			r.navTo('play', record)
+			r.navTo('play', {"playRecord":record.title})
 		},
 		onAuthorOpen: function (author) {
+			//MessageBox.show(author)
 			var r = sap.ui.core.UIComponent.getRouterFor(this)
-			r.navTo('author', author)
+			r.navTo('author', {"authorName":author})
 
 		},
 		onSelectionChange: function (oEvent) {
