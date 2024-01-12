@@ -21,6 +21,7 @@
                 growingThreshold="15"
                 growingScrollToLoad="false"
                 growing="true"
+                selectionChange="onSelectionChange"
             >
                 <columns>
                     <Column width="10%">
@@ -39,9 +40,11 @@
                 <items>
                     <ColumnListItem>
                         <cells>
-                            <Text
+                            <Button
+                                type="Transparent"
                                 id="idAuthor"
                                 text="{bookList>author}"
+                                press="onAuthorPress"
                             />
 
                             <Text text="{bookList>tag}" />
@@ -50,7 +53,7 @@
                                 type="Transparent"
                                 id="idPLayButton"
                                 text="{bookList>link}"
-                                press="onPlayVideo"
+                                press=".onPlayVideo(${bookList>author},${bookList>title},${bookList>link})"
                                 icon="sap-icon://media-play"
                             />
                         </cells>
@@ -58,6 +61,5 @@
                 </items>
             </Table>
         </content>
-        
     </Page>
 </mvc:View>

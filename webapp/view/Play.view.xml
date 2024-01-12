@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="com.genrep.book.controller.Main"
+    controllerName="com.genrep.book.controller.Play"
     displayBlock="true"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"

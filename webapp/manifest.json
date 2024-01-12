@@ -86,12 +86,21 @@
 					"pattern": "",
 					"name": "main",
 					"target": "main"
+				},
+				{
+					"pattern": "play",
+					"name": "play",
+					"target": "play"
 				}
 			],
 			"targets": {
 				"main": {
 					"viewId": "main",
 					"viewName": "Main"
+				},
+				"play": {
+					"viewId": "play",
+					"viewName": "Play"
 				}
 			}
 		}
