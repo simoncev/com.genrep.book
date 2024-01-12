@@ -24,20 +24,22 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 			this._clearPopover();
 			this.byId("idAuthor").removeEventDelegate(this._myDelegate);
 		},
-		onPlayVideo: function (author,title,link) {
-			let record={'author':author,'title':title,'link':link}
-			
+		onPlayVideo: function (author, title, link) {
+			let record = { 'author': author, 'title': title, 'link': link }
+
 			var r = sap.ui.core.UIComponent.getRouterFor(this)
-			r.navTo('play',record)
+			r.navTo('play', record)
 		},
-		onAuthorOpen: function(author){
+		onAuthorOpen: function (author) {
 			var r = sap.ui.core.UIComponent.getRouterFor(this)
-			r.navTo('author',author)
+			r.navTo('author', author)
 
 		},
-		onSelectionChange: function () {
-			MessageBox.show("Selection change....");
+		onSelectionChange: function (oEvent) {
+			var oSelectedItem = oEvent.getParameter("listItem");
+			//var oModel = oSelectedItem.getBindingContext().getObject();
+			alert(oSelectedItem);
 		},
-		
+
 	});
 });
