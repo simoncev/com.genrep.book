@@ -30,11 +30,14 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 			var r = sap.ui.core.UIComponent.getRouterFor(this)
 			r.navTo('play',record)
 		},
+		onAuthorOpen: function(author){
+			var r = sap.ui.core.UIComponent.getRouterFor(this)
+			r.navTo('author',author)
+
+		},
 		onSelectionChange: function () {
 			MessageBox.show("Selection change....");
 		},
-		onAuthorPress: function () {
-
-		}
+		
 	});
 });

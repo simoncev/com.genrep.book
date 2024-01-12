@@ -44,7 +44,7 @@
                                 type="Transparent"
                                 id="idAuthor"
                                 text="{bookList>author}"
-                                press="onAuthorPress"
+                                press=".onAuthorOpen(${bookList>author})"
                             />
 
                             <Text text="{bookList>tag}" />

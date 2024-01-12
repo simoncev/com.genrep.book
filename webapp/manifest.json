@@ -91,6 +91,11 @@
 					"pattern": "play",
 					"name": "play",
 					"target": "play"
+				},
+				{
+					"pattern": "author",
+					"name": "author",
+					"target": "author"
 				}
 			],
 			"targets": {
@@ -101,7 +106,12 @@
 				"play": {
 					"viewId": "play",
 					"viewName": "Play"
+				},
+				"author": {
+					"viewId": "author",
+					"viewName": "Author"
 				}
+
 			}
 		}
 	}
