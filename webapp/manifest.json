@@ -94,7 +94,7 @@
 				},
 				{
 					"pattern": "author",
-					"name": "author",
+					"name": "author/{authorName}",
 					"target": "author"
 				}
 			],

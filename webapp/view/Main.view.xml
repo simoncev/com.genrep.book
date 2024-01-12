@@ -21,7 +21,9 @@
                 growingThreshold="15"
                 growingScrollToLoad="false"
                 growing="true"
-                selectionChange="onSelectionChange"
+                mode="SingleSelectMaster"
+                selectionChange=".onSelectionChange"
+                alternateRowColors="false"
             >
                 <columns>
                     <Column width="10%">
