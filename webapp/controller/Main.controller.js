@@ -38,8 +38,9 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox"], function (BaseController
 		},
 		onSelectionChange: function (oEvent) {
 			var oSelectedItem = oEvent.getParameter("listItem");
-			//var oModel = oSelectedItem.getBindingContext().getObject();
-			alert(oSelectedItem);
+			var oModel = oSelectedItem.getBindingContext("bookList").getObject();
+			let title = oModel.title;
+			alert(title);
 		},
 
 	});
